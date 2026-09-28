@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Посоле - Кулинария Мексики</title>
+    <style>
+        * { box-sizing: border-box; }
+
+        body {
+            font-family: Georgia, "Times New Roman", serif;
+            background: #f7f7f2;
+            color: #1a1a1a;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(to right,
+                        #006847 33%,
+                        #ffffff 33%,
+                        #ffffff 66%,
+                        #ce1126 66%);
+            padding: 25px 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            position: relative;
+        }
+
+        header::after {
+            content: "";
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            height: 6px;
+            background: #8b6d3f;
+        }
+
+        header h1 {
+            text-align: center;
+            margin: 0;
+            font-size: 28px;
+            letter-spacing: 2px;
+            color: #1a1a1a;
+            text-shadow: 0 0 4px #ffffff, 0 0 8px #ffffff;
+        }
+
+        nav {
+            background: #1a1a1a;
+            text-align: center;
+            padding: 12px 0;
+        }
+
+        nav a {
+            color: #f7f7f2;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 15px;
+            letter-spacing: 1px;
+            transition: color 0.2s;
+        }
+
+        nav a:hover { color: #ffd966; }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+            overflow: hidden;
+        }
+
+        .card img {
+            width: 100%;
+            max-height: 380px;
+            object-fit: cover;
+            display: block;
+            background: #f0f0f0;
+        }
+
+        .card .body { padding: 30px 40px 35px 40px; }
+
+        .card h2 {
+            margin: 0 0 8px 0;
+            color: #006847;
+            font-size: 26px;
+            border-bottom: 2px solid #ce1126;
+            display: inline-block;
+            padding-bottom: 4px;
+        }
+
+        .subtitle {
+            color: #888;
+            font-style: italic;
+            margin: 8px 0 20px 0;
+            font-size: 15px;
+        }
+
+        .card h3 {
+            color: #ce1126;
+            margin: 25px 0 10px 0;
+            font-size: 18px;
+        }
+
+        .card p, .card li { color: #333; font-size: 15px; }
+        .card ul { padding-left: 20px; }
+        .card ul li { margin-bottom: 5px; }
+
+        .back {
+            display: inline-block;
+            margin-top: 25px;
+            background: #006847;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 22px;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .back:hover { background: #004d33; }
+
+        .signature {
+            text-align: right;
+            font-family: "Courier New", monospace;
+            font-size: 15px;
+            color: #333;
+            margin: 40px 20px 20px 20px;
+            padding-top: 15px;
+            border-top: 1px solid #ccc;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Посоле</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="tacos.html">Тако</a>
+        <a href="enchiladas.html">Энчиладас</a>
+        <a href="guacamole.html">Гуакамоле</a>
+        <a href="pozole.html">Посоле</a>
+        <a href="churros.html">Чуррос</a>
+        <a href="nachos.html">Начос</a>
+    </nav>
+
+    <div class="container">
+
+        <div class="card">
+            <img src="картинки/Посоле.png" alt="Посоле">
+
+            <div class="body">
+                <h2>Посоле</h2>
+                <p class="subtitle">Pozole · густой праздничный суп</p>
+
+                <p>
+                    Посоле — традиционный мексиканский суп из крупной кукурузы (hominy)
+                    и мяса (свинины или курицы), приправленный чили и специями.
+                    Его готовят по праздникам, особенно на День независимости Мексики.
+                </p>
+
+                <h3>Ингредиенты</h3>
+                <ul>
+                    <li>Кукуруза хомини — 500 г</li>
+                    <li>Свинина — 700 г</li>
+                    <li>Лук — 1 шт.</li>
+                    <li>Чеснок — 3 зубчика</li>
+                    <li>Перец чили гуахильо — 2 шт.</li>
+                    <li>Орегано, тмин, соль — по вкусу</li>
+                </ul>
+
+                <h3>Приготовление</h3>
+                <p>
+                    Мясо отварить до мягкости. Отдельно обжарить лук, чеснок и чили,
+                    измельчить блендером — получится соус. Добавить его в бульон
+                    с мясом и кукурузой, варить 40 минут. Подавать с нарезанным
+                    луком, кинзой, лаймом и лепёшками.
+                </p>
+
+                <a href="index.html" class="back">← Вернуться к списку</a>
+            </div>
+        </div>
+
+        <div class="signature">Рахимова ИС 4-2</div>
+
+    </div>
+
+</body>
+</html>
