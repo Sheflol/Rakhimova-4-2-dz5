@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Кулинария Мексики - Главная</title>
+    <style>
+        * { box-sizing: border-box; }
+
+        body {
+            font-family: Georgia, "Times New Roman", serif;
+            background: #f7f7f2;
+            color: #1a1a1a;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(to right,
+                        #006847 33%,
+                        #ffffff 33%,
+                        #ffffff 66%,
+                        #ce1126 66%);
+            padding: 25px 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            position: relative;
+        }
+
+        header::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: #8b6d3f;
+        }
+
+        header h1 {
+            text-align: center;
+            margin: 0;
+            font-size: 30px;
+            letter-spacing: 2px;
+            color: #1a1a1a;
+            text-shadow: 0 0 4px #ffffff, 0 0 8px #ffffff;
+        }
+
+        nav {
+            background: #1a1a1a;
+            text-align: center;
+            padding: 12px 0;
+        }
+
+        nav a {
+            color: #f7f7f2;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 15px;
+            letter-spacing: 1px;
+            transition: color 0.2s;
+        }
+
+        nav a:hover { color: #ffd966; }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .intro {
+            text-align: center;
+            color: #444;
+            font-style: italic;
+            margin-bottom: 40px;
+            padding: 20px;
+            background: #ffffff;
+            border-left: 6px solid #006847;
+            border-right: 6px solid #ce1126;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+        }
+
+        .dishes {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 22px;
+        }
+
+        .dish {
+            background: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .dish:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+        }
+
+        .dish img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            background: #f0f0f0;
+        }
+
+        .dish .body {
+            padding: 18px 20px 20px 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .dish h3 {
+            margin: 0 0 8px 0;
+            color: #006847;
+            font-size: 20px;
+        }
+
+        .dish p {
+            margin: 0 0 15px 0;
+            color: #444;
+            font-size: 14px;
+            flex: 1;
+        }
+
+        .dish a {
+            align-self: flex-start;
+            background: #ce1126;
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 18px;
+            border-radius: 4px;
+            font-size: 14px;
+            transition: background 0.2s;
+        }
+
+        .dish a:hover { background: #a30d1e; }
+
+        .signature {
+            text-align: right;
+            font-family: "Courier New", monospace;
+            font-size: 15px;
+            color: #333;
+            margin: 40px 20px 20px 20px;
+            padding-top: 15px;
+            border-top: 1px solid #ccc;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🇲🇽 Кулинария Мексики 🇲🇽</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="tacos.html">Тако</a>
+        <a href="enchiladas.html">Энчиладас</a>
+        <a href="guacamole.html">Гуакамоле</a>
+        <a href="pozole.html">Посоле</a>
+        <a href="churros.html">Чуррос</a>
+        <a href="nachos.html">Начос</a>
+    </nav>
+
+    <div class="container">
+
+        <div class="intro">
+            Мексиканская кухня — одна из богатейших кухонь мира. Она сочетает
+            древние традиции ацтеков и майя с испанским влиянием. Основу составляют
+            кукуруза, фасоль, перец чили, томаты и авокадо. Познакомься с самыми
+            известными блюдами Мексики!
+        </div>
+
+        <div class="dishes">
+
+            <div class="dish">
+                <img src="картинки/Тако.jpg" alt="Тако">
+                <div class="body">
+                    <h3>Тако</h3>
+                    <p>Кукурузная лепёшка с мясом, овощами и соусом сальса. Главное уличное блюдо Мексики.</p>
+                    <a href="tacos.html">Подробнее</a>
+                </div>
+            </div>
+
+            <div class="dish">
+                <img src="картинки/Энчиладас.jpg" alt="Энчиладас">
+                <div class="body">
+                    <h3>Энчиладас</h3>
+                    <p>Рулетики из кукурузных лепёшек с начинкой, запечённые под острым томатным соусом.</p>
+                    <a href="enchiladas.html">Подробнее</a>
+                </div>
+            </div>
+
+            <div class="dish">
+                <img src="картинки/Гуакамоле.jpg" alt="Гуакамоле">
+                <div class="body">
+                    <h3>Гуакамоле</h3>
+                    <p>Закуска из спелого авокадо с лаймом, луком, томатами и кинзой. Подают с чипсами.</p>
+                    <a href="guacamole.html">Подробнее</a>
+                </div>
+            </div>
+
+            <div class="dish">
+                <img src="картинки/Посоле.png" alt="Посоле">
+                <div class="body">
+                    <h3>Посоле</h3>
+                    <p>Густой суп из кукурузы и мяса с чили и специями. Традиционное праздничное блюдо.</p>
+                    <a href="pozole.html">Подробнее</a>
+                </div>
+            </div>
+
+            <div class="dish">
+                <img src="картинки/Чуррос.jpg" alt="Чуррос">
+                <div class="body">
+                    <h3>Чуррос</h3>
+                    <p>Сладкие жареные палочки из теста, посыпанные сахаром с корицей. К кофе или какао.</p>
+                    <a href="churros.html">Подробнее</a>
+                </div>
+            </div>
+
+            <div class="dish">
+                <img src="картинки/Начос.jpg" alt="Начос">
+                <div class="body">
+                    <h3>Начос</h3>
+                    <p>Хрустящие кукурузные чипсы с расплавленным сыром, халапеньо и соусом. Идеальная закуска.</p>
+                    <a href="nachos.html">Подробнее</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="signature">Рахимова ИС 4-2</div>
+
+    </div>
+
+</body>
+</html>
